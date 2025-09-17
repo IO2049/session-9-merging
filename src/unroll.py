@@ -1,10 +1,12 @@
 class Person:
-    name="John Doe"
-    friends=[]
+    DEFAULT_NAME="John Doe"
+
+    def __init__(self, name=DEFAULT_NAME):
+        self.name=name
+        self.friends=[]
 
     def addFriend(self,other_person):
         self.friends.append(other_person)
-
 
 def search_tree(person,name_to_find):
     for friend in person.friends:
