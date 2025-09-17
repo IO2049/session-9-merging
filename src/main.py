@@ -9,4 +9,5 @@ person3 = ur.Person("Erika Rosero")
 
 person.addFriend(person2)
 person.addFriend(person3)
+
 print(person.friends)
